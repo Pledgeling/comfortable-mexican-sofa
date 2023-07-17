@@ -39,14 +39,7 @@
       imageManagerJson,
       fileUpload,
       fileManagerJson,
-      definedLinks,
-      // allow unsafe tags and the like (prevent redactor stripping divs and other elements)
-      cleanOnEnter: false,
-      replaceTags: false,
-      removeComments: false,
-      removeNewLines: false,
-      deniedTags: [],
-      replaceDivs: false
+      definedLinks
     };
   };
 
