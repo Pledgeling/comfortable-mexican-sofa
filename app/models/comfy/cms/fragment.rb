@@ -51,6 +51,9 @@ protected
   def add_attachments
     return if @files.blank?
 
+    # rdsun: remove existing attachments first
+    attachments.destroy_all
+
     # If we're dealing with a single file
     if tag == "file"
       @files = [@files.first]
