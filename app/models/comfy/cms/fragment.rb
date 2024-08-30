@@ -6,7 +6,7 @@ class Comfy::Cms::Fragment < ActiveRecord::Base
 
   has_many_attached :attachments
 
-  serialize :content, coder: Psych, type: String
+  serialize :content, coder: Psych
 
   attr_reader :files
 
