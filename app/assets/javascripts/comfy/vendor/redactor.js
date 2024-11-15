@@ -1261,6 +1261,10 @@
 				createContainerBox: function()
 				{
 					this.$box = $('<div class="redactor-box" role="application" />');
+          var $warning = $(`<p class="alert alert-warning" style="margin-top: 0.5rem;">
+            Please ensure images are uploaded via the upload tool and not copy/pasted, 
+            as images not hosted by us could break unpredictably.</p>`);
+          this.$box.append($warning);
 				},
 				createTextarea: function()
 				{
