@@ -1261,11 +1261,11 @@
 				createContainerBox: function()
 				{
 					this.$box = $(`<div>
-              <div class="redactor-box" role="application"></div>
               <p class="alert alert-warning mx-0 mt-2">
                   Please ensure images are uploaded via the upload tool and not copy/pasted, 
                   as images not hosted by us could break unpredictably.
               </p>
+              <div class="redactor-box" role="application"></div>
           </div>`);
 				},
 				createTextarea: function()
