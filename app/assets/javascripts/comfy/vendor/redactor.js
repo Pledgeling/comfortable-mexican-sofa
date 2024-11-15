@@ -8653,10 +8653,6 @@
 					if (this.opts.buttons.length === 0) return;
 
 					this.$toolbar = this.toolbar.createContainer();
-          var $warning = $(`<p class="alert alert-warning mx-0 mt-2">
-            Please ensure images are uploaded via the upload tool and not copy/pasted,
-            as images not hosted by us could break unpredictably.</p>`);
-          this.$toolbar.before($warning);
 
 					this.toolbar.setOverflow();
 					this.toolbar.append();
@@ -8673,7 +8669,15 @@
 				},
 				createContainer: function()
 				{
-					return $('<ul>').addClass('redactor-toolbar').attr({'id': 'redactor-toolbar-' + this.uuid, 'role': 'toolbar'});
+					var $toolbar =  $('<ul>').addClass('redactor-toolbar').attr({'id': 'redactor-toolbar-' + this.uuid, 'role': 'toolbar'});
+          var $warning = $(`<p class="alert alert-warning mx-0 mt-2">
+            Please ensure images are uploaded via the upload tool and not copy/pasted,
+            as images not hosted by us could break unpredictably.</p>`);
+          var $container = $('<div>');
+          $container.append($warning);
+          $container.append($toolbar);
+
+          return $container;
 				},
 				setFormattingTags: function()
 				{
