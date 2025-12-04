@@ -1,39 +1,140 @@
-//= require rails-ujs
-//= require jquery3
+import jQuery from 'jquery'
+window.$ = window.jQuery = jQuery
 
-//= require comfy/vendor/codemirror
-//= require comfy/vendor/codemirror/mode/css/css
-//= require comfy/vendor/codemirror/mode/htmlmixed/htmlmixed
-//= require comfy/vendor/codemirror/mode/javascript/javascript
-//= require comfy/vendor/codemirror/mode/markdown/markdown
-//= require comfy/vendor/codemirror/mode/xml/xml
-//= require comfy/vendor/codemirror/addon/edit/closetag
-//= require comfy/vendor/sortable.min
-//= require comfy/vendor/bootstrap.bundle.min
-//= require comfy/vendor/diff/diff_match_patch.min
-//= require comfy/vendor/diff/pretty_text_diff
-//= require comfy/vendor/fontawesome
-//= require comfy/vendor/redactor
-//= require comfy/vendor/redactor/filemanager
-//= require comfy/vendor/redactor/imagemanager
-//= require comfy/vendor/redactor/definedlinks
-//= require comfy/vendor/redactor/table
-//= require comfy/vendor/redactor/video
-//= require_directory ../../vendor/redactor/i18n/
-//= require comfy/vendor/flatpickr.min
-//= require_directory ../../vendor/flatpickr/i18n/
+import Rails from '@rails/ujs'
+Rails.start()
 
-//= require comfy/admin/cms/base
-//= require comfy/admin/cms/categories
-//= require comfy/admin/cms/codemirror
-//= require comfy/admin/cms/diff
-//= require comfy/admin/cms/file_link
-//= require comfy/admin/cms/file_upload
-//= require comfy/admin/cms/files_modal
-//= require comfy/admin/cms/page_fragments
-//= require comfy/admin/cms/sortable_list
-//= require comfy/admin/cms/slugify
-//= require comfy/admin/cms/timepicker
-//= require comfy/admin/cms/wysiwyg
+import 'comfy/vendor/codemirror'
+import 'comfy/vendor/codemirror/mode/css/css'
+import 'comfy/vendor/codemirror/mode/htmlmixed/htmlmixed'
+import 'comfy/vendor/codemirror/mode/javascript/javascript'
+import 'comfy/vendor/codemirror/mode/markdown/markdown'
+import 'comfy/vendor/codemirror/mode/xml/xml'
+import 'comfy/vendor/codemirror/addon/edit/closetag'
+import 'comfy/vendor/sortable.min'
+import 'comfy/vendor/bootstrap.bundle.min'
+import 'comfy/vendor/diff/diff_match_patch.min'
+import 'comfy/vendor/diff/pretty_text_diff'
+import 'comfy/vendor/fontawesome'
+import 'comfy/vendor/redactor'
+import 'comfy/vendor/redactor/filemanager'
+import 'comfy/vendor/redactor/imagemanager'
+import 'comfy/vendor/redactor/definedlinks'
+import 'comfy/vendor/redactor/table'
+import 'comfy/vendor/redactor/video'
 
-//= require comfy/admin/cms/custom
+import 'comfy/vendor/redactor/i18n/ar'
+import 'comfy/vendor/redactor/i18n/az'
+import 'comfy/vendor/redactor/i18n/ba'
+import 'comfy/vendor/redactor/i18n/bg'
+import 'comfy/vendor/redactor/i18n/by'
+import 'comfy/vendor/redactor/i18n/ca'
+import 'comfy/vendor/redactor/i18n/cs'
+import 'comfy/vendor/redactor/i18n/da'
+import 'comfy/vendor/redactor/i18n/de'
+import 'comfy/vendor/redactor/i18n/el'
+import 'comfy/vendor/redactor/i18n/en'
+import 'comfy/vendor/redactor/i18n/eo'
+import 'comfy/vendor/redactor/i18n/es_AR'
+import 'comfy/vendor/redactor/i18n/es'
+import 'comfy/vendor/redactor/i18n/fa'
+import 'comfy/vendor/redactor/i18n/fi'
+import 'comfy/vendor/redactor/i18n/fr'
+import 'comfy/vendor/redactor/i18n/ge'
+import 'comfy/vendor/redactor/i18n/gr'
+import 'comfy/vendor/redactor/i18n/he'
+import 'comfy/vendor/redactor/i18n/hr'
+import 'comfy/vendor/redactor/i18n/hu'
+import 'comfy/vendor/redactor/i18n/id'
+import 'comfy/vendor/redactor/i18n/it'
+import 'comfy/vendor/redactor/i18n/ja'
+import 'comfy/vendor/redactor/i18n/kn'
+import 'comfy/vendor/redactor/i18n/ko'
+import 'comfy/vendor/redactor/i18n/lt'
+import 'comfy/vendor/redactor/i18n/lv'
+import 'comfy/vendor/redactor/i18n/mk'
+import 'comfy/vendor/redactor/i18n/nb'
+import 'comfy/vendor/redactor/i18n/nl'
+import 'comfy/vendor/redactor/i18n/pl'
+import 'comfy/vendor/redactor/i18n/pt-BR'
+import 'comfy/vendor/redactor/i18n/pt'
+import 'comfy/vendor/redactor/i18n/ro'
+import 'comfy/vendor/redactor/i18n/ru'
+import 'comfy/vendor/redactor/i18n/sk'
+import 'comfy/vendor/redactor/i18n/sl'
+import 'comfy/vendor/redactor/i18n/sq'
+import 'comfy/vendor/redactor/i18n/sr-CIR'
+import 'comfy/vendor/redactor/i18n/sr-LAT'
+import 'comfy/vendor/redactor/i18n/sv'
+import 'comfy/vendor/redactor/i18n/th'
+import 'comfy/vendor/redactor/i18n/tr'
+import 'comfy/vendor/redactor/i18n/ua'
+import 'comfy/vendor/redactor/i18n/uk'
+import 'comfy/vendor/redactor/i18n/vi'
+import 'comfy/vendor/redactor/i18n/zh-CN'
+import 'comfy/vendor/redactor/i18n/zh-TW'
+
+import 'comfy/vendor/flatpickr.min'
+import 'comfy/vendor/flatpickr/i18n/ar.js'
+import 'comfy/vendor/flatpickr/i18n/bg.js'
+import 'comfy/vendor/flatpickr/i18n/bn.js'
+import 'comfy/vendor/flatpickr/i18n/ca.js'
+import 'comfy/vendor/flatpickr/i18n/cs.js'
+import 'comfy/vendor/flatpickr/i18n/cy.js'
+import 'comfy/vendor/flatpickr/i18n/da.js'
+import 'comfy/vendor/flatpickr/i18n/de.js'
+import 'comfy/vendor/flatpickr/i18n/default.js'
+import 'comfy/vendor/flatpickr/i18n/eo.js'
+import 'comfy/vendor/flatpickr/i18n/es.js'
+import 'comfy/vendor/flatpickr/i18n/et.js'
+import 'comfy/vendor/flatpickr/i18n/fa.js'
+import 'comfy/vendor/flatpickr/i18n/fi.js'
+import 'comfy/vendor/flatpickr/i18n/fr.js'
+import 'comfy/vendor/flatpickr/i18n/gr.js'
+import 'comfy/vendor/flatpickr/i18n/he.js'
+import 'comfy/vendor/flatpickr/i18n/hi.js'
+import 'comfy/vendor/flatpickr/i18n/hr.js'
+import 'comfy/vendor/flatpickr/i18n/hu.js'
+import 'comfy/vendor/flatpickr/i18n/id.js'
+import 'comfy/vendor/flatpickr/i18n/it.js'
+import 'comfy/vendor/flatpickr/i18n/ja.js'
+import 'comfy/vendor/flatpickr/i18n/ko.js'
+import 'comfy/vendor/flatpickr/i18n/lt.js'
+import 'comfy/vendor/flatpickr/i18n/lv.js'
+import 'comfy/vendor/flatpickr/i18n/mk.js'
+import 'comfy/vendor/flatpickr/i18n/mn.js'
+import 'comfy/vendor/flatpickr/i18n/ms.js'
+import 'comfy/vendor/flatpickr/i18n/my.js'
+import 'comfy/vendor/flatpickr/i18n/nl.js'
+import 'comfy/vendor/flatpickr/i18n/no.js'
+import 'comfy/vendor/flatpickr/i18n/pa.js'
+import 'comfy/vendor/flatpickr/i18n/pl.js'
+import 'comfy/vendor/flatpickr/i18n/pt-BR.js'
+import 'comfy/vendor/flatpickr/i18n/pt.js'
+import 'comfy/vendor/flatpickr/i18n/ro.js'
+import 'comfy/vendor/flatpickr/i18n/ru.js'
+import 'comfy/vendor/flatpickr/i18n/si.js'
+import 'comfy/vendor/flatpickr/i18n/sk.js'
+import 'comfy/vendor/flatpickr/i18n/sl.js'
+import 'comfy/vendor/flatpickr/i18n/sq.js'
+import 'comfy/vendor/flatpickr/i18n/sr.js'
+import 'comfy/vendor/flatpickr/i18n/sv.js'
+import 'comfy/vendor/flatpickr/i18n/th.js'
+import 'comfy/vendor/flatpickr/i18n/tr.js'
+import 'comfy/vendor/flatpickr/i18n/uk.js'
+import 'comfy/vendor/flatpickr/i18n/vn.js'
+import 'comfy/vendor/flatpickr/i18n/zh-CN.js'
+import 'comfy/vendor/flatpickr/i18n/zh-TW.js'
+
+import 'comfy/admin/cms/base'
+import 'comfy/admin/cms/categories'
+import 'comfy/admin/cms/codemirror'
+import 'comfy/admin/cms/diff'
+import 'comfy/admin/cms/file_link'
+import 'comfy/admin/cms/file_upload'
+import 'comfy/admin/cms/files_modal'
+import 'comfy/admin/cms/page_fragments'
+import 'comfy/admin/cms/sortable_list'
+import 'comfy/admin/cms/slugify'
+import 'comfy/admin/cms/timepicker'
+import 'comfy/admin/cms/wysiwyg'
