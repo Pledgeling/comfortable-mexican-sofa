@@ -1,11 +1,10 @@
 #!/usr/bin/env sh
 
 sass app/sources/stylesheets/comfy/admin/cms/application.sass:app/assets/builds/comfy/admin/cms/application.css \
-  --no-source-map \
+  --style=compressed \
   --load-path=node_modules \
   --load-path=app/sources/stylesheets \
   --silence-deprecation=import \
   --silence-deprecation=color-functions \
   --silence-deprecation=global-builtin \
-  --silence-deprecation=slash-div \
-  "$@"
+  --silence-deprecation=slash-div
