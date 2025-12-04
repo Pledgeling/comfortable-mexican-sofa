@@ -1,2 +1,2 @@
-app/assets/javascripts/comfy/vendor/* linguist-vendored
-app/assets/stylesheets/comfy/vendor/* linguist-vendored
+app/sources/javascripts/comfy/vendor/* linguist-vendored
+app/sources/stylesheets/comfy/vendor/* linguist-vendored
