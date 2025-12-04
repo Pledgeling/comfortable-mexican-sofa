@@ -5,7 +5,7 @@ module Comfy
     module Cms
       class AssetsGenerator < Rails::Generators::Base
 
-        source_root File.expand_path(File.join(File.dirname(__FILE__), "../../../../app/assets"))
+        source_root File.expand_path(File.join(File.dirname(__FILE__), "../../../../app/sources"))
 
         def generate_assets
           directory "javascripts/comfy/admin/cms", "app/assets/javascripts/comfy/admin/cms"

@@ -8,6 +8,7 @@ unless ENV["SKIP_COV"]
   require "simplecov"
   require "coveralls"
   SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+  SimpleCov.command_name "Unit Tests"
   SimpleCov.start do
     add_filter "lib/tasks"
     add_filter "lib/generators"
@@ -19,7 +20,7 @@ require_relative "../config/environment"
 
 require "rails/test_help"
 require "rails/generators"
-require "mocha/setup"
+require "mocha/minitest"
 
 Rails.backtrace_cleaner.remove_silencers!
 

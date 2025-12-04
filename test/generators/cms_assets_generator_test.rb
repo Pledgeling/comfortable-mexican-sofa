@@ -9,8 +9,8 @@ class CmsAssetsGeneratorTest < Rails::Generators::TestCase
 
   def test_generator
     run_generator
-    assert_directory "app/assets/javascripts/comfy/admin/cms"
-    assert_directory "app/assets/stylesheets/comfy/admin/cms"
+    assert_directory "app/sources/javascripts/comfy/admin/cms"
+    assert_directory "app/sources/stylesheets/comfy/admin/cms"
   end
 
 end
