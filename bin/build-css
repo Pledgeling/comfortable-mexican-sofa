@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 sass app/sources/stylesheets/comfy/admin/cms/application.sass:app/assets/builds/comfy/admin/cms/application.css \
+  --embed-sources \
   --style=compressed \
   --load-path=node_modules \
   --load-path=app/sources/stylesheets \
