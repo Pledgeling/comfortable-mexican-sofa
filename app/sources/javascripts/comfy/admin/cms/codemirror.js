@@ -1,12 +1,11 @@
 import CodeMirror from 'codemirror';
 
-// import 'comfy/vendor/codemirror'
-// import 'comfy/vendor/codemirror/mode/css/css'
-// import 'comfy/vendor/codemirror/mode/htmlmixed/htmlmixed'
-// import 'comfy/vendor/codemirror/mode/javascript/javascript'
-// import 'comfy/vendor/codemirror/mode/markdown/markdown'
-// import 'comfy/vendor/codemirror/mode/xml/xml'
-// import 'comfy/vendor/codemirror/addon/edit/closetag'
+import 'codemirror/mode/css/css';
+import 'codemirror/mode/htmlmixed/htmlmixed';
+import 'codemirror/mode/javascript/javascript';
+import 'codemirror/mode/markdown/markdown';
+import 'codemirror/mode/xml/xml';
+import 'codemirror/addon/edit/closetag';
 
 (() => {
   const codeMirrorInstances = [];
