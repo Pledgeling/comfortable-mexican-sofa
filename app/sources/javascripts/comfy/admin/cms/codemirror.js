@@ -1,4 +1,4 @@
-import { CodeMirror } from 'codemirror';
+import CodeMirror from 'codemirror';
 
 // import 'comfy/vendor/codemirror'
 // import 'comfy/vendor/codemirror/mode/css/css'
