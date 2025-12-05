@@ -1,3 +1,5 @@
+import Sortable from 'sortablejs';
+
 (() => {
   const Rails = window.Rails;
   const DATA_ID_ATTRIBUTE = 'data-id';
