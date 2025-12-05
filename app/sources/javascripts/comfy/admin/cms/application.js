@@ -1,6 +1,5 @@
 import './initializer_hack'
 
-import 'comfy/vendor/bootstrap.bundle.min'
 import 'comfy/vendor/diff/diff_match_patch.min'
 import 'comfy/vendor/diff/pretty_text_diff'
 import 'comfy/vendor/fontawesome'

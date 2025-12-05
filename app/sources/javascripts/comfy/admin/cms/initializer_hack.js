@@ -1,5 +1,7 @@
 import jQuery from 'jquery'
-window.$ = window.jQuery = jQuery
-
+import * as bootstrap from 'bootstrap/dist/js/bootstrap.bundle'
 import Rails from '@rails/ujs'
+
+window.$ = window.jQuery = jQuery
+window.bootstrap = bootstrap
 Rails.start()
