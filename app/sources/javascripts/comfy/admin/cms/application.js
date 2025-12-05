@@ -1,8 +1,4 @@
-import jQuery from 'jquery'
-window.$ = window.jQuery = jQuery
-
-import Rails from '@rails/ujs'
-Rails.start()
+import './initializer_hack'
 
 import 'comfy/vendor/sortable.min'
 import 'comfy/vendor/bootstrap.bundle.min'
