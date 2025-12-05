@@ -1,5 +1,4 @@
-//= require comfy/vendor/moxie.min
-//= require comfy/vendor/plupload.dev
+import plupload from 'plupload';
 
 (() => {
   const DROP_TARGET_ACTIVE_CLASS = 'cms-uploader-drag-drop-target-active';
