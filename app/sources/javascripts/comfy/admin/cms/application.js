@@ -4,13 +4,6 @@ window.$ = window.jQuery = jQuery
 import Rails from '@rails/ujs'
 Rails.start()
 
-import 'comfy/vendor/codemirror'
-import 'comfy/vendor/codemirror/mode/css/css'
-import 'comfy/vendor/codemirror/mode/htmlmixed/htmlmixed'
-import 'comfy/vendor/codemirror/mode/javascript/javascript'
-import 'comfy/vendor/codemirror/mode/markdown/markdown'
-import 'comfy/vendor/codemirror/mode/xml/xml'
-import 'comfy/vendor/codemirror/addon/edit/closetag'
 import 'comfy/vendor/sortable.min'
 import 'comfy/vendor/bootstrap.bundle.min'
 import 'comfy/vendor/diff/diff_match_patch.min'

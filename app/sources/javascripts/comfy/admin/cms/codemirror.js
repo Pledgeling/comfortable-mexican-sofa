@@ -1,3 +1,13 @@
+import { CodeMirror } from 'codemirror';
+
+// import 'comfy/vendor/codemirror'
+// import 'comfy/vendor/codemirror/mode/css/css'
+// import 'comfy/vendor/codemirror/mode/htmlmixed/htmlmixed'
+// import 'comfy/vendor/codemirror/mode/javascript/javascript'
+// import 'comfy/vendor/codemirror/mode/markdown/markdown'
+// import 'comfy/vendor/codemirror/mode/xml/xml'
+// import 'comfy/vendor/codemirror/addon/edit/closetag'
+
 (() => {
   const codeMirrorInstances = [];
   window.CMS.codemirror = {
